@@ -4,7 +4,7 @@
 :root {
     --very-dark-blue: hsl(233, 47%, 7%);
     --desaturated-dark-blue: hsl(244, 38%, 16%);
-    --soft-violet-accent: #aa5cdb;
+    --soft-violet-accent: hsl(277, 64%, 61%);
 
     --white: hsl(0, 0%, 100%);
     --paragraph-transparent-white: hsl(0, 0%, 100%, .75);
@@ -29,7 +29,7 @@ picture {
     min-height: 100%;
 }
 
-.layer {
+/* .layer {
     position: absolute;
     min-height: inherit;
     left: 0;
@@ -37,6 +37,16 @@ picture {
     background-color: #aa5cdb;
     z-index: 5;
     opacity: .6;
+} */
+
+.layer {
+    position: absolute;
+    min-height: inherit;
+    left: 0;
+    right: 0;
+    background-color: var(--soft-violet-accent);
+    mix-blend-mode: multiply;
+    opacity: 80%;
 }
 
 .stats-card {
